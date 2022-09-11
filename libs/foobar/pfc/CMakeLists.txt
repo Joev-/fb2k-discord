@@ -1,0 +1,36 @@
+add_library(pfc
+        SmartStrStr.cpp
+        audio_math.cpp
+        audio_sample.cpp
+        base64.cpp
+        bigmem.cpp
+        bit_array.cpp
+        bsearch.cpp
+        charDownConvert.cpp
+        cpuid.cpp
+        crashWithMessage.cpp
+        filehandle.cpp
+        guid.cpp
+        nix-objects.cpp
+        other.cpp
+        pathUtils.cpp
+        pfc-fb2k-hooks.cpp
+        printf.cpp
+        selftest.cpp
+        sort.cpp
+        splitString2.cpp
+        stdafx.cpp
+        string-compare.cpp
+        string-conv-lite.cpp
+        string-lite.cpp
+        string_base.cpp
+        string_conv.cpp
+        synchro_nix.cpp
+        threads.cpp
+        timers.cpp
+        unicode-normalize.cpp
+        utf8.cpp
+        wildcard.cpp
+        win-objects.cpp)
+
+target_compile_definitions(pfc PRIVATE UNICODE _UNICODE)

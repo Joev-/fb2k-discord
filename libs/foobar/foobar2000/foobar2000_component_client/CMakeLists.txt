@@ -1,0 +1,2 @@
+add_library(foobar2000_component_client component_client.cpp)
+target_compile_definitions(foobar2000_component_client PRIVATE _UNICODE)
