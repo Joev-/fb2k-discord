@@ -114,5 +114,8 @@ add_library(foobar2000_helpers STATIC
         writer_wav.cpp
         writer_wav.h)
 
-#target_include_directories(foobar2000_helpers PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(foobar2000_helpers PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ../../
+        ../../../atl/include)
 target_compile_definitions(foobar2000_helpers PRIVATE _UNICODE UNICODE)
